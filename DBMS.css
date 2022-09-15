@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    margin: 0%;
+    font-size: 20px;
+    color: white;
+}
+
+.module{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 40px;
+    text-align: center;
+    line-height: 35px;
+    width: 50%;
+}
+
+.FDI{
+    color: #9649c9;;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+td{
+    border:1px solid #333;
+    background-color:rgb(225, 219, 219);
+    width:80px;
+    text-align:center;
+    font-weight: bold;
+    font-size:25px;
+    color: white;
+}
+
+tr:nth-child(1) > td {
+    background-color: rgb(188, 187, 187);
+}
+
+input{
+    text-align: center;
+}
+
+#validFD, #closure, #CannonicalCover, #candi{
+    /* background-color: white; */
+    padding: 6px;
+    border-radius: 60px;
+    color:#9649c9;
+    margin-top: 10px;
+}
+
+#FD{
+    margin-top:30px;
+    margin:auto;
+    width:50%;
+}
+
+#totalFD{
+    width:100%;
+}
+
+span{
+    margin: 0 10px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.btn{
+    background-color: aliceblue;
+    border: none;
+    padding: 8px;
+    font-weight: 600;
+    transition-delay: 0.1;
+    margin: 7px;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+    background-color: #09caec;
+    /* transform: scale(1.1,1.1); */
+    color: white;
+}
+
+#attrO, #LHS, #RHS, #rel, #rela, #totalFD, #findattr, #ckfd, #cover{
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+}

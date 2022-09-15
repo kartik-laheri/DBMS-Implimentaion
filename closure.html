@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DBMS.css" />
+    <script src="DBMS.js"></script>
+</head>
+<body>
+    <div class="module">
+        <h1 class="FDI">Find the Closure </h1>
+        <label for="rel">Enter Attributes : </label>
+        <input type="text" name="Attributes" id="rel" max="10" /><br />
+        <label for="totalFD">Enter the Functional Dependencies:</label>
+        <input type="text" name="FDS" id="totalFD" width="500px" /><br />
+        <label for="findattr">Enter the Attribute</label>
+        <input type="text" name="findAttribute" id="findattr" /><br />
+        <button onclick="Closure()" class="btn">Find Closure</button>
+        <div id="closure"></div>
+    </div>
+</body>
+</html>

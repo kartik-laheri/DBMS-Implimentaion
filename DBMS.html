@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBMS Innovative Assignment</title>
+    <link rel="stylesheet" href="DBMS.css" />
+    <script src="DBMS.js"></script>
+  </head>
+  <body>
+    
+
+    <div class="module">
+      <h1 class="FDI">Find the Closure of the Attribute</h1>
+      <label for="rel">Enter Attributes of Relation : </label>
+      <input
+        type="text"
+        name="Attributes"
+        id="rel"
+        max="10"
+        value="P,Q,R,S,T,U,V"
+      /><br />
+      <label for="totalFD"
+        >Enter the Functional Dependency with respect to Relation</label
+      >
+      <input
+        type="text"
+        name="FDS"
+        id="totalFD"
+        value="P->Q,Q*R->S*T,P*T*V->V"
+        width="500px"
+      /><br />
+      <label for="findattr"
+        >Enter the Attribute name to which closure have to find out</label
+      >
+      <input type="text" name="findAttribute" id="findattr" value="Q*R" /><br />
+      <button onclick="FindClosure()" class="btn">Find Closure</button>
+      <div id="closure"></div>
+    </div>
+
+    <div class="module">
+      <h1 class="FDI">Find the Candidate keys of Relation</h1>
+      <label for="rela">Enter Attributes of Relation : </label>
+      <input
+        type="text"
+        name="Attributes"
+        id="rela"
+        max="10"
+        value="A,B,C"
+      /><br />
+      <label for="ckfd"
+        >Enter the Functional Dependency with respect to Relation</label
+      >
+      <input
+        type="text"
+        name="FDS"
+        id="ckfd"
+        value="A*B->C,B->C*B"
+        width="500px"
+      /><br />
+      <button onclick="findCK()" class="btn">Calculate</button>
+      <div id="candi"></div>
+    </div>
+
+    <div class="module">
+      <h1 class="FDI">Find The Canonical Cover</h1>
+      <label for="cover">Enter a FDs : </label>
+      <input type="text" id="cover" value="A->B,B->C,C->DF" />
+      <button onclick="find();" class="btn">Find</button>
+      <div id="CannonicalCover"></div>
+    </div>
+  </body>
+</html>
